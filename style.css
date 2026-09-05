@@ -1,0 +1,41 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fc;color:#172033;line-height:1.6}
+.navbar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:18px 7%;border-bottom:1px solid #e7eaf0}
+.brand{font-weight:800;font-size:20px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#172033;text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover{opacity:.65}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center;padding:70px 8%;background:linear-gradient(135deg,#eef4ff,#fff)}
+.eyebrow{font-size:13px;letter-spacing:2px;font-weight:800;opacity:.65;margin-bottom:10px}
+.hero h1{font-size:clamp(40px,6vw,72px);line-height:1.05;margin-bottom:15px}
+.hero h2{font-size:22px;margin-bottom:18px;font-weight:600}
+.hero p{max-width:680px;font-size:18px;color:#596273}
+.buttons{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid #172033}
+.primary{background:#172033;color:#fff}.secondary{color:#172033;background:#fff}
+.photo-card{display:flex;justify-content:center}
+.photo-card img{width:min(390px,90vw);aspect-ratio:1/1;object-fit:cover;border-radius:28px;box-shadow:0 25px 60px rgba(20,30,50,.18)}
+.section{padding:85px 8%}
+.section-title{margin-bottom:30px}
+.section-title h2{font-size:38px}
+.card{background:#fff;border:1px solid #e6e9ef;border-radius:18px;padding:28px;box-shadow:0 12px 35px rgba(30,40,60,.06)}
+.about-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;padding:0;overflow:hidden}
+.about-grid div{padding:23px;background:#fff;display:flex;flex-direction:column}
+.about-grid strong{font-size:13px;text-transform:uppercase;letter-spacing:1px;opacity:.55}
+.timeline{display:grid;gap:18px}
+.year{font-size:13px;font-weight:800;opacity:.55}
+.timeline-item h3{font-size:22px;margin:6px 0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card h3{margin-bottom:12px}
+ul{padding-left:20px}
+.cv-card{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contact-card{display:flex;gap:15px;align-items:center;background:#fff;border:1px solid #e6e9ef;border-radius:18px;padding:22px;text-decoration:none;color:#172033}
+.contact-card div{display:flex;flex-direction:column}
+.contact-card strong{font-size:14px}.contact-card span:not(.icon){opacity:.7}
+.icon{font-size:27px}.whatsapp{border-color:#bfe4c8}
+.facebook-note{margin-top:22px;opacity:.65}
+footer{text-align:center;padding:30px;background:#172033;color:#fff}
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.buttons{justify-content:center}.cards{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}nav{display:none}}
+@media(max-width:560px){.section{padding:60px 5%}.hero{padding:55px 5%}.cards{grid-template-columns:1fr}.section-title h2{font-size:31px}.hero h2{font-size:18px}.photo-card img{width:85vw}}
